@@ -1,36 +1,75 @@
 ---
-title: Introduction
-description: "Welcome to the home of your new documentation"
+title: "Introduction"
+description: "How to build a browser use webUI "
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+<img alt="Hero Light" classname="block dark:hidden" src="/images/hero-light.png" />This project builds upon the foundation of the [browser-use](https://github.com/browser-use/browser-use), which is designed to make websites accessible for AI agents.
 
-## Setting up
+We would like to officially thank [WarmShao](https://github.com/warmshao) for his contribution to this project.
 
-The first step to world-class documentation is setting up your editing environments.
+**WebUI:** is built on Gradio and supports most of `browser-use` functionalities. This UI is designed to be user-friendly and enables easy interaction with the browser agent.
+
+**Expanded LLM Support:** We've integrated support for various Large Language Models (LLMs), including: Google, OpenAI, Azure OpenAI, Anthropic, DeepSeek, Ollama etc. And we plan to add support for even more models in the future.
+
+**Custom Browser Support:** You can use your own browser with our tool, eliminating the need to re-login to sites or deal with other authentication challenges. This feature also supports high-definition screen recording.
+
+**Persistent Browser Sessions:** You can choose to keep the browser window open between AI tasks, allowing you to see the complete history and state of AI interactions.
+
+![](/Screenshot\(136\).png)
+
+## Installation Guide
+
+### Prerequisites
+
+[](https://github.com/browser-use/web-ui/blob/main/README.md#prerequisites)
+
+* Python 3.11 or higher
+
+* Git (for cloning the repository)
+
+### **Option 1: Local Installation**
+
+[](https://github.com/browser-use/web-ui/blob/main/README.md#option-1-local-installation)
+
+Read the [quickstart guide](https://docs.browser-use.com/quickstart#prepare-the-environment) or follow the steps below to get started.
+
+#### Step 1: Clone the Repository in command prompt&#x20;
+
+[](https://github.com/browser-use/web-ui/blob/main/README.md#step-1-clone-the-repository)
+
+git clone [https://github.com/browser-use/web-ui.git](https://github.com/browser-use/web-ui.git)
+cd web-ui  &#x20;
+
+Step 1.1: Change the C folder into D folder in cmd .
+
+C:\Users\L vimalraj>D:
+
+Step 1.2 : Enter the web-ui command .
+
+cd web-ui
+
+Step1.3 : Envirement and activate the web-ui using this command.
+
+venv\Scripts\activate
+
+Step 1.4 : Install the python requirements .
+
+pip install -r requirements.txt
+
+Step 1.5 : After installing the python requirements and install playwright install.
+
+playwright install
+
+Step 1.6 : Final on copy the code form github .
+
+python webui.py --ip 127.0.0.1 --port 7788
 
 <CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
+  <Card title="Edit Your Docs" icon="pen-to-square" href="https://mintlify.com/docs/quickstart">
     Get your docs set up locally for easy development
   </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
+
+  <Card title="Preview Changes" icon="image" href="https://mintlify.com/docs/development">
     Preview your changes before you push to make sure they're perfect
   </Card>
 </CardGroup>
@@ -40,32 +79,19 @@ The first step to world-class documentation is setting up your editing environme
 Update your docs to your brand and add valuable content for the best user conversion.
 
 <CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
+  <Card title="Customize Style" icon="palette" href="https://mintlify.com/docs/settings/global">
     Customize your docs to your company's colors and brands
   </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
+
+  <Card title="Reference APIs" icon="code" href="https://mintlify.com/docs/api-playground/openapi">
     Automatically generate endpoints from an OpenAPI spec
   </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
+
+  <Card title="Add Components" icon="screwdriver-wrench" href="https://mintlify.com/docs/content/components/accordions">
     Build interactive features and designs to guide your users
   </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
+
+  <Card title="Get Inspiration" icon="stars" href="https://mintlify.com/customers">
     Check out our showcase of our favorite documentation
   </Card>
 </CardGroup>
